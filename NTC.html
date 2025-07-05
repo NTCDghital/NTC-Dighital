@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chỉnh sửa ảnh Bất động sản</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Chỉnh Ảnh BĐS</h1>
+      <nav class="space-x-4">
+        <a href="#services" class="text-gray-700 hover:text-blue-600">Dịch vụ</a>
+        <a href="#pricing" class="text-gray-700 hover:text-blue-600">Bảng giá</a>
+        <a href="#gallery" class="text-gray-700 hover:text-blue-600">Mẫu ảnh</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-100 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Chỉnh sửa ảnh bất động sản chuyên nghiệp</h2>
+    <p class="text-lg text-gray-700 mb-6">Tăng giá trị hình ảnh – Tăng giá trị bất động sản của bạn.</p>
+    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Liên hệ ngay</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Dịch vụ của chúng tôi</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white shadow rounded-lg p-6">
+        <h4 class="font-semibold text-xl mb-2">Chỉnh sáng & màu</h4>
+        <p>Làm cho ảnh sáng hơn, sắc nét hơn và hấp dẫn hơn.</p>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6">
+        <h4 class="font-semibold text-xl mb-2">Xóa vật thể không mong muốn</h4>
+        <p>Loại bỏ rác, dây điện, vật cản trong ảnh.</p>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6">
+        <h4 class="font-semibold text-xl mb-2">Ghép bầu trời</h4>
+        <p>Thay thế bầu trời mờ nhạt bằng nền trời trong xanh.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-10">Bảng giá</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-4">Gói cơ bản</h4>
+          <p class="text-2xl font-bold text-blue-600 mb-2">20.000đ/ảnh</p>
+          <ul class="text-gray-600 mb-4">
+            <li>Chỉnh màu cơ bản</li>
+            <li>Làm sáng ảnh</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border-2 border-blue-600">
+          <h4 class="text-xl font-semibold mb-4">Gói nâng cao</h4>
+          <p class="text-2xl font-bold text-blue-600 mb-2">40.000đ/ảnh</p>
+          <ul class="text-gray-600 mb-4">
+            <li>Xóa vật thể</li>
+            <li>Ghép bầu trời</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-4">Gói toàn diện</h4>
+          <p class="text-2xl font-bold text-blue-600 mb-2">60.000đ/ảnh</p>
+          <ul class="text-gray-600 mb-4">
+            <li>Tất cả các tính năng</li>
+            <li>Xử lý ưu tiên</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Mẫu ảnh trước & sau</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h5 class="font-semibold mb-2">Trước</h5>
+        <img src="https://via.placeholder.com/500x300?text=Before" alt="Before" class="rounded shadow">
+      </div>
+      <div>
+        <h5 class="font-semibold mb-2">Sau</h5>
+        <img src="https://via.placeholder.com/500x300?text=After" alt="After" class="rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Liên hệ với chúng tôi</h3>
+      <form class="max-w-xl mx-auto text-left bg-white p-6 rounded-lg shadow">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="name">Họ tên</label>
+          <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="email">Email</label>
+          <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="message">Nội dung yêu cầu</label>
+          <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="image">Gửi ảnh</label>
+          <input type="file" id="image" name="image" accept="image/*" class="w-full">
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Gửi yêu cầu</button>
+      </form>
+      <div class="mt-6">
+        <p class="mb-2">Hoặc liên hệ nhanh qua:</p>
+        <div class="flex justify-center gap-6">
+          <a href="https://zalo.me/123456789" target="_blank" class="text-blue-600 hover:underline">Zalo</a>
+          <a href="https://m.me/yourpage" target="_blank" class="text-blue-600 hover:underline">Messenger</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    © 2025 Chỉnh sửa ảnh BĐS. All rights reserved.
+  </footer>
+
+</body>
+</html>
